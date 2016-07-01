@@ -2,7 +2,7 @@
 
 ## Objectives
 
-To gain a solid understanding of 
+To gain a solid understanding of arrays and strings.
 
 ### Part 1
 
