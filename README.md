@@ -22,8 +22,8 @@ You may assume the string will be all letters and that the length of the input s
 
 4. Write a program implementing the Hangman game.  You may hardcode a word for the user to guess.  The program should display blanks for each letter and fill those blanks as the user guesses correctly.  The program should also display the bank of incorrectly guessed letters and have a limited number of allowed incorrect guesses before the player loses the game.
 ```
-    Optional challenge: create a set of words and have the game randomly choose one each time <br>
-    Optional challenge: prompt the user to play again<br>
+    Optional challenge: create a set of words and have the game randomly choose one each time 
+    Optional challenge: prompt the user to play again
     Optional challenge: include ascii art corresponding to the hangman game that updates each time the user guesses incorrectly
 ```
 
