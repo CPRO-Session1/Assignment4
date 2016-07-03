@@ -1,0 +1,5 @@
+Jack Rosen
+1.The biggest difference between a string and a character array is a string has the '\0' character at the end.  
+2. Arrays are very helpful when using the same data type. They are not helpful if they are from a different data type. Also, there is no checking mechanism for array sizes.
+3. This occurs when an array name appears in an expression such as when its an operand of the sizeof operator, or as an operand of & operator.
+4. Each character would be compared and if they were all equal, a 0 would be the output.
