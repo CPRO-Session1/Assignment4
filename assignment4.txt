@@ -1,0 +1,11 @@
+Emma Ladouceur
+
+1. A character array in c separates each letter into its own section. s[10] = {"h", "e", etc..}
+whereas if you wanted it as a string you could simply put it as s[10] = {"hello"}. The cmputer still sees each space as 0-10, but it will recognize each section. 
+C doesn't have its own thing for a string, so in a sense a string is just a character array
+
+2. Arrays in c are kind of confusing because you cannot mix different values. Its either char or int which makes it extremely hard to put things together. In ruby you can have numbers and strings and chars. Its also really really challenging, maybe impossible to create an empty array. Ispent about 4 hours this weekend trying to figure that out and even purchased a text book. If you want to set. The arrays are static and the size cannot change after initialization. I can think of no advantages. 
+
+3. When an array is in an an expression it won't generate the address the first element of the array. 
+
+4. If theyre the exact same 0 will be returned. 
