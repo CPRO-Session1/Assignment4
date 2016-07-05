@@ -1,0 +1,17 @@
+Olivier Gabison
+
+1. A char array is an array of single characters. When initializing, single quotes are used. However, for strings, it is a data structure that is an
+array of characters. Strings end in \0 (as the last character) and is initialized with double quotes.
+
+2. Advantages:
+- You can have one name for the same objects and save them with different indexes.
+- Super useful when working with the same kind of data.
+
+Disadvantages:
+- It is not easy to work with arrays with many indexes.
+- C doesn't have out of bounds check for the arrays.
+
+3. The compiler does not do this, but generates the address of the first element whenever the array
+appears in an expression.
+
+4. You could use the strcmp() function to compare them.
