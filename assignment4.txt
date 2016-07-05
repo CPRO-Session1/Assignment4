@@ -1,0 +1,9 @@
+Rumeet Goradia
+1. A character array is simply an array whose elements are characters. To initialize these arrays, single quotes must be used. On the other hand, a string is a data structure that uses an array of characters. Strings end in the \0 escape sequence and are initialized using double quotes.
+2. Advantages: a. Arrays are useful when working with sequences of the same kind of data.
+	       b. Arrays can store multiple values under one name.
+   Disadvantages: a. Arrays can become confusing if many of them are used at once. 
+                  b. C doesn't have any bounds checks for its arrays.
+		  c. The size of an array can't be changed.
+3. The compiler does not implicitly generate the address of the first element of an array whenever an array appears in an expression such as the operand of "sizeof" or the operand of the "&" operator.
+4. One could use "strcmp()" function. If it returns 0, then the two strings are the same value.
