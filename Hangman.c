@@ -66,7 +66,7 @@ int main()
 		{
 			printf("Enter your word/phrase\n");
 			fgets(word,sizeof(word),stdin);
-			word[strlen(word)]='\0';
+			word[strlen(word)-1]='\0';
 		}
 		char out[strlen(word)];
 		for(int i=0;i<sizeof(word);i++)
