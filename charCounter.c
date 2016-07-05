@@ -20,16 +20,16 @@ int main() {
 				count ++;
 			}
 		}
-		for (check = 0; check != 26; check ++){ // checks if letter is already checked
+		for (check = 0; check != 26; check ++){ // checks if letter has already been printed
 			if (letters[check] == myString[l]){
 				doneAlready = 1;
 			}
 		}
-			if (count != 0){
+			if (count != 0){ // if the letter is found in the string, add the letter to the array of letters that already been checked
                         letters[first] = myString[l];
 			first ++;
 			}
-		if (doneAlready == 0){
+		if (doneAlready == 0){ // if the letter hasn't been printed yet, print out the letter with the number of times it is found
 			printf("%c = %d\n", myString[l], count);
 		}
 		count = 0;

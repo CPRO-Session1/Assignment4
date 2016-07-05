@@ -15,7 +15,7 @@ int main(){
 	int b[n-1]; // array for sum of elements
 	int total = 0; // counts sum of integers
 	printf("Cumulative value of array:\n");
-	for (c = 0; c != n; c++){ // adds and prints integers
+	for (c = 0; c != n; c++){ // adds total of all integers before current, then prints sum of integers
 		b[c] = 0;
 		total += a[c];
 		b[c] = total;

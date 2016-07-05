@@ -1,0 +1,23 @@
+Julia Tan
+Assignment 4 Part 2
+
+1. Strings are usually implemented with character arrays. Strings have an additional '\0' at the end, while character arrays do not (unless it is a string that has been turned into an array). A character array is an array of characters, while a string is a data structure that uses an array of characters.
+
+2.
+Advantages:
+- useful for representing multiple data items of the same type using only one name
+- arrays in arrays are possible
+
+
+Disadvantages:
+- it is a static structure, so it has fixed size. This means that the memory allocated for the array can't be increased or decreased.
+- it is mandatory to determine the size of the array before elements can be stored in it.
+
+3. It doesn't implicitly generate the address of the first element an array when the array name appears in an expression, e.g. array as an operand in th sizeof operator or array as an operand of & operator.
+
+4. I would create a for loop, where the index increases after each loop. Inside the for loop, both arrays are checked for having the same value at each index. If they are not equal, a variable would be increased to 1. At the end of the for loop, if the variable is equal to 1, that would mean that the 2 arrays are not equivalent in content.
+
+for (i = 0; i != 100; i ++){
+	if (array1[i] != array2[i])
+		inequivalent = 1;
+}

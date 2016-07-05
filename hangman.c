@@ -4,9 +4,8 @@
 
 int main(){
 	char word[100]; // Word that the player has to guess. This word is chosen by another player.
-	char blanksList[100]; //
+	char blanksList[100]; // prints blanks and letters guessed (what the player sees)
 	int count = 0; // counter
-	int guess = 0;
 	int letters = 0; // chars left to guess
 	int guessedCorrectly = 0;
 	int draw = 0;
@@ -25,19 +24,20 @@ int main(){
 	{ // while all letters haven't been guesed
 		printf("Guess a letter:\n");
 		scanf(" %c", &userIn);
-		for (count = 0; count != strlen(blanksList); count ++)
+		for (count = 0; count != strlen(blanksList); count ++)// for every letter in word
 			{
 			if (userIn == word[count])
 			{
-				blanksList[count] = word[count];
-				letters --;
+				if (blanksList[count] != word[count])
+				{
+					blanksList[count] = word[count];
+					letters --; // only decreases amount of letters to guess left if the input hasn't been guessed before
+				}
 				guessedCorrectly = 1;
 			}
 		}
-		if (guessedCorrectly != 1)
-		{
+		if (guessedCorrectly != 1) // if guesed wrong, draw more lines to hangman
 			draw ++;
-		}
 		guessedCorrectly = 0;
 		switch(draw)
 		{
@@ -78,7 +78,7 @@ int main(){
 				printf("=========\n\n");
 				break;
 				case 4 :
-			printf("  +---+  \n");
+				printf("  +---+  \n");
 				printf("  |   |  \n");
 				printf("  O   |  \n");
 				printf(" /|\\  |  \n");
@@ -107,10 +107,10 @@ int main(){
 				letters = 0;
 				break;
 		}
-		if (draw != 6)
+		if (draw != 6) // if number of mistakes is not 6 yet
 			printf("%s \n", blanksList);
 	}
-	if (draw != 6)
+	if (draw != 6) // if haven't reached max. mistakes
 		printf("Congratulations, you won! You had %d mistakes.\n",draw);
 	return 0;
 }
