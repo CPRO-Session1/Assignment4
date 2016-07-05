@@ -1,5 +1,6 @@
 /*Ava N.*/
 /*Write a program that takes an array as input, removes duplicates, and outputs that array. */
+//I am submitting but would like to still work on this
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
