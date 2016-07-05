@@ -9,7 +9,6 @@ int main(){
 	char input_guess;
 	int guessed_letters=0;
 	int correct_guesses;
-	//char blank_spots [4]="____. Used Letters:";
 	char guesses [8];
 	/*incorrect_correct_guesses[0]='\0';*/
 	int counter;
@@ -19,7 +18,6 @@ int main(){
 		scanf("%c", &input_guess);
 		for(counter=0; counter<4; counter++){
 			if(input_guess==word[counter]){
-				//blank_spots[counter]=input_guess;
 				guessed_letters++;
 				//guesses--;
 				printf("You guessed a correct letter. \n");
@@ -40,7 +38,6 @@ int main(){
 		}
 		printf("This is the word you have come up with so far: %s \n", correct);
 		//printf("You used %d guesses of 8 guesses. \n", guessed_letters);
-	//while(incorrect_correct_guesses);
 		if (guesses >= 8); {
 			printf ("You have lost. Try again next time.\n");
 			break;
