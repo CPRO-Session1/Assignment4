@@ -1,0 +1,13 @@
+1. A character Array contains only an array of characters. Strings are also an array of characters but they have an additional \0. 
+2. 
+advantages
+- useful for having lots of data items using the same name.
+- it is possible for arrays in array
+disadvantages
+- They are not easy to operate with many index arrays.
+- The data is static
+- Shortage/wastage of memory
+
+3. the compiler does not inplicitly generate the address of the first element of an array if the array name is shown as an expression.
+
+4. Two strings would be compared by using a for loop where the index of the string will increment by 1 everytime and then use an if statement to compare the two.
