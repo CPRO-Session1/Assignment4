@@ -1,0 +1,11 @@
+Matthew Danielson
+7/1/16
+Assignment 4; Part 2
+
+1) Strings are very similar to character arrays; the main difference is that a string has the \0 character at the end, denoting it as a string. Strings are defined by use of "", while chars are denoted by ''. Additionally, strings have functions that allow for concatenation, calculation of their size, and replacement of each other.
+
+2) In C, arrays have defined lengths, and their data types cannot be changed. Additionally, C does not check bounds, thus accessing indeces outside of the array calls other RAM values. However, accessing parts of an array individually does not take much CPU or time in C. 
+
+3) When an array is used as an operand in either the sizeof or & operator, the first element is not implicitly generated. Additonally, when a string is used to initialize a character array, the first element is not generated implicitly.
+
+4) The function strcomp(s1,s2) will return 0 if the two strings are equivalent, thus allowing for a way of checking if they are the same.
