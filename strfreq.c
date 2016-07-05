@@ -1,3 +1,4 @@
+/*Rumeet Goradia - String Character Frequency*/
 #include <stdio.h>
 #include <string.h>
 int main ()
