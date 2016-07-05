@@ -7,7 +7,7 @@ int main()
 {
 	char ans;
 	do{
-		char word[16];
+		char* word[16];
 		srand(time(NULL));
 		int r = rand()%10;
 		switch (r){
@@ -45,64 +45,76 @@ int main()
 		printf("Let's play a game of HANGMAN!\n");
 		printf("Here's your word:\n");
 		int i;
-		char guess[15];
-		for (i=0; i<15; i++)
+		char guess[16];
+		for (i=0; i<16; i++)
 		{
 			guess[i]='_';
-
+			if (i==15)
+				guess[i]='\0';
 			printf(" %c ", guess[i]);
 		}
 		printf("\n");
 		char correctbank[26];
 		char wrongbank[26];
-		int wrong = 0;
+		
 		char input;
-		int j, k, m, p; /*counters*/
+		int j, k, m, p, t, u; /*counters*/
 		int n=0;
-		int q=0;
+	
 		int s=0;
 		int counter;
+		int breaker;
 		int total=15;
 		do{
 			printf("Guess a letter!\n");
 			scanf("%c", &input);
-			
-		
+			counter=0;
+			breaker=0;
 			for (j=0; j<15; j++)
 			{
-				counter = 0;
-				if (input==wrongbank[n]||input==correctbank[s])
+				
+				for (t=0;t<n;t++){
+					if(input==wrongbank[t]){
+						breaker=1;
+					}
+				}
+				for(u=0;u<s;u++){
+					if(input==correctbank[u]){
+						breaker=1;
+					}
+				}
+				if (breaker==1)
 				{
 					printf("You already guessed that letter!\n");
 					break;
 				}
-				if (input==word[j]&&input!=correctbank[s])
+				if (input==word[j])
 				{
 					guess[j]=input;
 					correctbank[s]=input;
 
 					s++;
-					q++;
+					
 				}
-				if (input!=word[j]&&input!=wrongbank[n])
+				if (input!=word[j])
 				{
 					counter++;
 				}
 				
-			}
-			if (counter==total)
-			{
-				wrong++;
-				printf("Sorry, that letter isn't in the word.\n");
-				wrongbank[n]=input;
-				n++;
-			}
-				
 			
-		
-			if (counter!=total)
-				printf("Good guess!\n");
+				if (counter==total)
+				{	
+					
+					printf("Sorry, that letter isn't in the word.\n");
+					wrongbank[n]=input;
+					n++;
+				}
 			
+				if (counter!=total&&j==14)
+				{
+					printf("Good guess!\n");
+				}
+			}
 
 			printf("Letters you've guessed correctly: \n");
 			for (k=0; k<s; k++)
@@ -116,7 +128,7 @@ int main()
 			}
 			printf("\n");
 
-			switch (wrong){
+			switch (n){
 				case 0:
 					printf(" _________     \n");
 					printf("|         |    \n");
@@ -181,17 +193,18 @@ int main()
 					printf("|              \n"); 
 					break;
 			}
+			getchar();
 			for (p=0; p<15; p++){
 				printf("%c  ", guess[p]);
 			}
 			printf("\n");
-		}while(wrong<6||q<15);
+		}while(n<6||s<15);
 		
-		if (wrong==6){
+		if (n==6){
 			printf("Sorry! You lost.\n");
 			printf("Play again? Enter Y for yes or N for no.\n");
 		}
-		if (q==15){
+		if (s==15){
 			printf("Congratulations! You won!\n");
 		 	printf("Play again? Enter Y for yes or N for no.\n");
 		}
