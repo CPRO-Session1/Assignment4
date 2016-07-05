@@ -11,6 +11,7 @@ int main() {
 	char myString[100];
 	char letters[25];
 	int first = 0;
+	printf("Enter some string:\n");
 	fgets(myString, sizeof(myString),stdin); // prompts for string
 	int length = (strlen(myString)-1); // length of string
 	for (l = 0; l != length; l++){ // for each character in string
@@ -29,7 +30,7 @@ int main() {
 			first ++;
 			}
 		if (doneAlready == 0){
-			printf("The letter %c appears %d times.\n", myString[l], count);
+			printf("%c = %d\n", myString[l], count);
 		}
 		count = 0;
 		doneAlready = 0;

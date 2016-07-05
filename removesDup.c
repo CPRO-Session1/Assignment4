@@ -24,8 +24,7 @@ int main(){
 		doubles = 0;
 	}
 	printf("Array:\n");
-	for (c = 0; c < n; c++){ // prints array
-		printf("%d\n",a[c]);
-	}
+	for (c = 0; c < n; c ++)
+		printf("%d\n",a[c]); // prints array
 	return 0;
 }
