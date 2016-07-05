@@ -1,0 +1,28 @@
+Eli Kalish
+Assignment 4 Part 2
+
+1. Discuss the differences between string and a character array
+	Character Arrays and Strings are very similar, with the only main difference
+	between them being that a string is a character array that must end with '\0'.
+2. Explain the advantages and disadvantages of arrays in C
+	Arrays are very useful for storing multiple elements of the same data
+	type and then being able to draw upon that data. This can be much more
+	useful than just making a bunch of different variables of the same type.
+	The main disadvantages of arrays is that they are static. This means that
+	you can't change an array's size after it's created. What this further means
+	is that you need to know in advance how many elements you are going to 
+	need to store in order to be efficient and not create an array which is
+	too big, which would waste space.
+3. When does the compiler not implicitly generate the address of the first element
+of an array?
+	I have no idea for this one. I looked it up and none of the answers made 
+	much sense to me. From what it said(so not me), it's when it's the operand of
+	the sizeOf() function.
+4. How would two strings be compared to see if they're equivalent in content?
+	This can be done by using the #include <string.h> statement at the beginning
+	of the code to import string functions. One of these is the function to
+	compare strings, strcmp(). Put the two srings you wish to compare into the
+	parentheses separated by a comma and the function will return 0 if they
+	are equivalent, -1 if the second string comes before the first in
+	lexicographical order and 1 if the first string comes before the second
+	in lexicographical order.
