@@ -1,0 +1,13 @@
+//Anya Lauria
+
+1. A character array is a data structure of which the elements are of data
+   type character. A string is a data type that is made of an array of 
+   characters. 
+2. A disadvantage is that arrays can become confusing, especially if many 
+   of them are implemented. Their size can also not be changed once set.
+   However, they are useful when working with lots of values of the same
+   data type, which you can then be able to store under one name. 
+3. When the array is initialized without the values originally assigned. 
+4. You would use the function strcmp(). If it returns 0, the strings 
+   the same. If it returns with a positive or negative number, they are 
+   after or before each other in a lexographical order. 
