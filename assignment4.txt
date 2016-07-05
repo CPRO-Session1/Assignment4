@@ -1,0 +1,3 @@
+1) A character array is a series of bytes representing characters. A string is all of the characters in that array that come before a '\0'.
+
+2) Arrays are useful when you need several variables, where the purpose of the values are too similar to give each their own name, and iterating through them would make more sense.
