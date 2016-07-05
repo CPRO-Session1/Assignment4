@@ -1,0 +1,9 @@
+Clarke Littlejohn
+
+1) From what i understand there is not really a difference between the two but from readng online string points to a terminator,
+
+2)They can be useful for storing large amount of numbers or characters. There is no arrayIndexoutofbounds error message which can be annoying.
+
+3)No idea.
+
+4) You could used the strcmp method or you could look at each index and compare those one by one.
