@@ -1,0 +1,5 @@
+Lloyd Page
+1. A string is a character array with a \0 escape character at the end that allows for it to use the functions provided by string.h
+2. advantages of an array in C is that you can use a for loop to run through them, allowing for easy processing of large amounts of a data type, as well as easy declaration of a large number of variables of the same data type. Disadvantages of an array in C is that its size is determined upon declaration, which means a new one must be made if you want to expand size, and if you want to reduce size there is wasted memory.
+3. Only when you specify a memory location(Only possible in languages that allow for such actions)
+4. Compared character by character, if the two characters at the same location are equivalent across all locations within the strings, it is determined th strings are equivalent
