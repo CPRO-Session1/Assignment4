@@ -1,5 +1,5 @@
 /*Ava N.*/
-/*Write a program that takes a string of characters and returns the frequency of each character in that string. For characters not in the string, nothing should be printed.*/
+/*Write a program that takes a string of characters and returns the frequency of each character in that string.*/
 #include <stdio.h>
 #include <stdlib.h>
 
