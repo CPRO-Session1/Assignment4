@@ -1,0 +1,9 @@
+Sean Kee
+
+1. The difference between a string and a character array is that a string is an array of a collection of characters. A string is like a book, and the character array is like the pages.
+
+2. The advantages of arrays in C is that you have complete and direct control over the arrays and how they are setup/used. However, the cost of that is a very tedious and painful system involving loops and arrays when it comes to using strings.
+
+3. The complier doesn't implicitly generate the address of the first element of an array whenever the array is ONLY being initialize without having values assigned to it. For example: array[10];
+
+4. In order to compare the two strings, you would use the fuction strcmp(). If it returns 0, then the strings are the same. If it returns with a positive number, it means string2 comes before string1 in lexicographical order. If it returns with a negative number, it means string1 comes before string2 in lexicographical order. Some operating systems even show how far apart they are.
