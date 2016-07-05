@@ -1,0 +1,10 @@
+Ava N.
+July 5, 2016
+
+1. Character arrays are arrays of characters. For example: char c='a';. Strings are arrays of characters. For example: char[10]="Hello World";. What this will do is assign char[0]='H', char[1]='e', char[2]='l', char[3]='l', char[4]='o', char[5]=' ', char[6]='W', char[7]='o', char[8]='r', char[9]='l', char[10]='d'. String assignment is only at declaration. Also, at the beginning of the program should use "#include <string.h>". 
+
+2. The advantages of arrays in C are that it is very easy to store many integers in an array.  The disadvantages of arrays in C are that the size can't change after the declaration. 
+
+3. The compiler does not implicitly generate the address of the first element of an array when an array appears as an expression. 
+
+4. Two strings can be compared to see if they're equivalent in content by using strcmp(), and if the output is 0, then the strings are equal.
