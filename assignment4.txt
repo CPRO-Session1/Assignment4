@@ -1,0 +1,5 @@
+Christopher Liu - I didn't get question 3
+1. A string allows you to use string operations, and ends with '\0'.
+2. Arrays are useful because they're an organized way to create a bunch of variables with the same type. Disadvantages are the size of arrays cannot be changed, and all the variables of the array must be the same type.
+3. It does not implicitly generate the address of an array when it is used in an operator such as sizeof()
+4. You would use strcmp() after including string.h. The function will return zero if the strings are equivalent in content.
