@@ -1,10 +1,11 @@
 /*Sean Kee*/
-/*Hangman v1.0*/
+/*Hangman v1.1*/
 #include <stdio.h>
 
 int main()
 {
-	printf("Welcome to Hangman\n");
+	printf("Welcome to HANGMAN\n");
+	printf("******************\n\n");
 	
 	char display[6];
 	char word[6] = "rhythm";
@@ -63,12 +64,18 @@ int main()
 				{
 					for (i = 0; i < 26; i++)
 					{
-						if (usedLetters[i] == '1')
+						if (usedLetters[i] == input)
 						{
-							usedLetters[i] = input;
 							tries--;
 							break;
 						}
+						else
+							if (usedLetters[i] == '1')
+							{
+								usedLetters[i] = input;
+								tries--;
+								break;
+							}
 					}
 				}
 				for (i = 0; i < 6; i++)
