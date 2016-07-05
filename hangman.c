@@ -1,5 +1,5 @@
 /*Sean Kee*/
-/*Hangman v1.4*/
+/*Hangman v1.5*/
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
@@ -9,7 +9,7 @@ int main()
 	printf("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
 	printf("Welcome to HANGMAN\n");
 	printf("******************\n");
-	printf("   ______\n   I    !\n   I   \\@/\n   I    |\n   I   / \\     __@\n   I  [&&&]   \\  |\\\n[__I__[&&&]___II/ \\__\n| HANGMAN  v1.4      |__\n|_______________SEAN KEE|\n\n\n");
+	printf("   ______\n   I    !\n   I   \\@/\n   I    |\n   I   / \\     __@\n   I  [&&&]   \\  |\\\n[__I__[&&&]___II/ \\__\n| HANGMAN  v1.5      |__\n|_______________SEAN KEE|\n\n\n");
 	
 	char words[10][10] = {"rhythm ", "telemetry ", "argon ", "boron ", "specter ", "platform ", "kitchen ", "admiral ", "captain ", "chipotle "};
 	char usedLetters[26];
@@ -21,7 +21,7 @@ int main()
 	//Counters
 	int i;
 	int j;
-	int l = 0;
+	int l;
 	
 	printf("Would you like to start? [Y:1/N:2]\n#: ");
 	scanf("%d", &startGame);
@@ -29,6 +29,7 @@ int main()
 	do
 	{
 		//Resets all variables before game starts
+		l = 0;
 		tries = 7;
 		for (i = 0; i < 26; i++)
 			usedLetters[i] = '1';
@@ -155,8 +156,8 @@ int main()
 			{
 				printf("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
 				printf("\n\n   ______\n   I    !\n   I    !\n   I    !\n   I    !       __@\n   I    !      /  |\\\n[__I__  !  ___II_/ \\__\n| You | ! | Failed.  |__\n|_____| ! |_____________|\n\n\n");
-			}
 			printf("The word was: ");
+			}
 			for (i = 0; i < 10; i++)
 				printf("%c", words[j][i]);
 			printf("\n\n*************************\n\n");
