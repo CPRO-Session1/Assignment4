@@ -1,3 +1,6 @@
+//Anya Lauria 
+// Sum of elements 
+
 #include <stdio.h>
 
 int main()
