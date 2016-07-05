@@ -26,7 +26,7 @@ int main(){
 				printf("You used %d guesses of 8 guesses.\n", guessed_letters);
 			}
 		//}
-			else(input_guess!=word[counter]);{
+			else{
 				guessed_letters++;
 				printf("You guessed an incorrect letter. \n");
 				//guesses--;
