@@ -1,0 +1,9 @@
+1. A character array is a simple array while the string is a sequence of characters combined which can perform many different operations in the program.
+2. There can be multiple data under one array so it is easy to put similar variables together. When performing and dealing with sequences and frequencies, array also benefits the programmer. The main disadvantage that I have faced in my programs is allocating a size for my arrays, because arrays have a fixed size. The bigger the array, the more memory it takes up. However, if there is too little, the program will not function.
+3. Not sure, but maybe when it functions with the &operator, it does not necessarily use the first element, but instead, whichever element necessary?
+4. Use strcmp to compare the two codes. eg. int strcmp(s1,s2);
+if return =0l both lines are equal in length.
+if return is negative, s1 is shorter and more efficient.
+if return is positive, s1 is longer. 
+
+-- Oscar So --
