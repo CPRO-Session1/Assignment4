@@ -1,5 +1,5 @@
 //Anya Lauria
-
+//Removes duplicates 
 #include <stdio.h>
 #include <stdbool.h>
 

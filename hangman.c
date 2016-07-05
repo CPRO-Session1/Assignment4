@@ -1,6 +1,6 @@
 //Anya Lauria
 //Sort of works? But sometimes it rejects letters that are correct
-
+//Hangman 
 #include <stdio.h> 
 
 int main()

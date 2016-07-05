@@ -1,5 +1,5 @@
 //Anya Lauria 
-
+// Frequency of characters 
 #include <stdio.h>
 #include <string.h>
 int main() 
