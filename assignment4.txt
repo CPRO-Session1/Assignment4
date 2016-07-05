@@ -1,0 +1,9 @@
+Aly Milich
+
+1. A string is collection of characters that can make up words or sentences. In order to read a string in C, strings have to be split into character arrays which break apart the string into individual chars.
+
+2. Arrays are advantageous because they give the programmer complete control over what's inside and organizes data. It is easy and efficient to create an array and add/delete things from the array. A disadvantage is that they can be difficult to navigate sometimes and require a lot of loops to organize/search through.
+
+3. The compiler won't implicitly generate the address of the first element in the array when an array is initialized without values originally added to it.
+
+4. The easiest way to compare two strings to see if they're equal is the function strcmp(). If 0 is returned, the strings are equal.
