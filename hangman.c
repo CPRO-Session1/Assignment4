@@ -1,12 +1,13 @@
 /*Sean Kee*/
-/*Hangman v1.3*/
+/*Hangman v1.4*/
 #include <stdio.h>
 
 int main()
 {
+	printf("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
 	printf("Welcome to HANGMAN\n");
 	printf("******************\n");
-	printf("   ______\n   I    !\n   I   \\@/\n   I    |\n   I   / \\     __@\n   I  [&&&]   \\  |\\\n[__I__[&&&]___II/ \\__\n| HANGMAN  v1.3      |__\n|_______________SEAN KEE|\n\n\n");
+	printf("   ______\n   I    !\n   I   \\@/\n   I    |\n   I   / \\     __@\n   I  [&&&]   \\  |\\\n[__I__[&&&]___II/ \\__\n| HANGMAN  v1.4      |__\n|_______________SEAN KEE|\n\n\n");
 	
 	char display[6];
 	char word[6] = "rhythm";
@@ -36,44 +37,44 @@ int main()
 		{
 			while (tries > 0)
 			{
-				printf("\n\n");
+				printf("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
 				if (result == 0)
-					tries == 8;
+					tries = 8;
 				switch(tries)
 				{
 					case 1:
 						{
-							printf("   ______\n   I    !\n   I   \\@/\n   I    |\n   I   / \\     __@\n   I  [&&&]   \\  |\\\n[__I__[&&&]___II/ \\__\n| Tries Left: %d     |__\n|_______________________|\n", tries);
+							printf("   ______\n   I    !\n   I   \\@/\n   I    |\n   I   / \\     __@\n   I  [&&&]   \\  |\\\n[__I__[&&&]___II/ \\__\n| Tries Left: %d      |__\n|_______________________|\n", tries);
 							break;
 						}
 					case 2:
 						{
-							printf("   ______\n   I    !\n   I   \\@\n   I    |\\\n   I   /       __@\n   I  [&&&]   \\  |\\\n[__I__[&&&]___II/ \\__\n| Tries Left: %d     |__\n|_______________________|\n", tries);
+							printf("   ______\n   I    !\n   I   \\@\n   I    |\\\n   I   /       __@\n   I  [&&&]   \\  |\\\n[__I__[&&&]___II/ \\__\n| Tries Left: %d      |__\n|_______________________|\n", tries);
 							break;
 						}
 					case 3:
 						{
-							printf("   ______\n   I    !\n   I    @\n   I   /|\\\n   I           __@\n   I  [&&&]   \\  |\\\n[__I__[&&&]___II/ \\__\n| Tries Left: %d     |__\n|_______________________|\n", tries);
+							printf("   ______\n   I    !\n   I    @\n   I   /|\\\n   I           __@\n   I  [&&&]   \\  |\\\n[__I__[&&&]___II/ \\__\n| Tries Left: %d      |__\n|_______________________|\n", tries);
 							break;
 						}
 					case 4:
 						{
-							printf("   ______\n   I    !\n   I    @\n   I   /|\n   I           __@\n   I  [&&&]   \\  |\\\n[__I__[&&&]___II/ \\__\n| Tries Left: %d     |__\n|_______________________|\n", tries);
+							printf("   ______\n   I    !\n   I    @\n   I   /|\n   I           __@\n   I  [&&&]   \\  |\\\n[__I__[&&&]___II/ \\__\n| Tries Left: %d      |__\n|_______________________|\n", tries);
 							break;
 						}
 					case 5:
 						{
-							printf("   ______\n   I    !\n   I    @\n   I    |\n   I           __@\n   I  [&&&]   \\  |\\\n[__I__[&&&]___II/ \\__\n| Tries Left: %d     |__\n|_______________________|\n", tries);
+							printf("   ______\n   I    !\n   I    @\n   I    |\n   I           __@\n   I  [&&&]   \\  |\\\n[__I__[&&&]___II/ \\__\n| Tries Left: %d      |__\n|_______________________|\n", tries);
 							break;
 						}
 					case 6:
 						{
-							printf("   ______\n   I    !\n   I    @\n   I\n   I           __@\n   I  [&&&]   \\  |\\\n[__I__[&&&]___II/ \\__\n| Tries Left: %d     |__\n|_______________________|\n", tries);
+							printf("   ______\n   I    !\n   I    @\n   I\n   I           __@\n   I  [&&&]   \\  |\\\n[__I__[&&&]___II/ \\__\n| Tries Left: %d      |__\n|_______________________|\n", tries);
 							break;
 						}
 					case 7:
 						{
-							printf("   ______\n   I    !\n   I\n   I\n   I           __@\n   I  [&&&]   \\  |\\\n[__I__[&&&]___II/ \\__\n| Tries Left: %d     |__\n|_______________________|\n", tries);
+							printf("   ______\n   I    !\n   I\n   I\n   I           __@\n   I  [&&&]   \\  |\\\n[__I__[&&&]___II/ \\__\n| Tries Left: %d      |__\n|_______________________|\n", tries);
 							break;
 						}
 					case 8:
@@ -137,7 +138,10 @@ int main()
 				}
 			}
 			if (result == 1)
-				printf("\n\n   ______\n   I    !\n   I    !\n   I    !\n   I    !       __@\n   I    !      /  |\\\n[__I__  !  ___II_/ \\__\n| You | ! | Failed.  |__\n|_____| ! |_____________|\n\n");
+			{
+				printf("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
+				printf("\n\n   ______\n   I    !\n   I    !\n   I    !\n   I    !       __@\n   I    !      /  |\\\n[__I__  !  ___II_/ \\__\n| You | ! | Failed.  |__\n|_____| ! |_____________|\n\n\n");
+			}
 		}
 		printf("Would you like to play again? [Y:1/N:2]\n#: ");
 		scanf("%d", &startGame);
