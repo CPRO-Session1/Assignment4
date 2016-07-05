@@ -1,6 +1,6 @@
 /*Ava N.*/
 /*a program implementing the Hangman game.*/
-
+/*I am submitting but would like to still work on this*/
 #include <stdio.h>
 int main(){
 	
